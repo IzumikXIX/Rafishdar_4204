@@ -1,0 +1,97 @@
+/* Footer general */
+.footer {
+  background-color: #e9bf64; /* Fondo oscuro para contraste */
+  color: rgb(0, 0, 0);
+  padding: 2rem 1rem;
+  font-family: roboto;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+/* Contenedor flexible para 4 columnas */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 1rem;
+}
+
+/* Marca o logotipo */
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+  font-size: 19px;
+}
+
+.footer-logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+  font-size: 19px;
+  font-family: roboto;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer-contact p {
+  margin: 0.3rem 0;
+  color: #3f3f3f;
+}
+
+/* Enlaces legales */
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+  font-size: 19px;
+}
+
+.footer-links a {
+  display: block;
+  color: #3f3f3f;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #757575;
+}
+
+/* Redes sociales con íconos */
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+  font-size: 19px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,114 @@
+/* ========================================================= */
+/* SECCIONES GENERALES */
+/* ========================================================= */
+
+section {
+  width: 100%;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-gra1-Zonas,
+.div-gra1-ZonasDetalle,
+.div-gra1-Rutas,
+.div-gra1-Listas,
+.div-gra1-Checklist,
+.div-gra1-Validacion {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: rgba(250, 243, 225, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 40px;
+  backdrop-filter: blur(3px);
+  font-family: Kadwa;
+}
+
+/* ========================================================= */
+/* BLOQUES DE TEXTO */
+/* ========================================================= */
+
+.div-Zonas-texto,
+.div-ZonasDetalle-texto,
+.div-Rutas-texto,
+.div-Listas-texto,
+.div-Checklist-texto,
+.div-Validacion-texto {
+  padding: 10px 20px;
+}
+
+.div-Zonas-texto h2,
+.div-ZonasDetalle-texto h2,
+.div-Rutas-texto h2,
+.div-Listas-texto h2,
+.div-Checklist-texto h2,
+.div-Validacion-texto h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.div-Zonas-texto p,
+.div-ZonasDetalle-texto p,
+.div-Rutas-texto p,
+.div-Listas-texto p,
+.div-Checklist-texto p,
+.div-Validacion-texto p {
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+/* ========================================================= */
+/* MEDIOS (IMÁGENES – VIDEOS – IFRAMES) */
+/* ========================================================= */
+
+.div-Zonas-img,
+.div-ZonasDetalle-img,
+.div-Rutas-img,
+.div-Listas-img,
+.div-Checklist-img,
+.div-Validacion-img {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  width: 150px;
+  height: 150px;
+}
+
+.div-Zonas-img img,
+.div-ZonasDetalle-img img,
+.div-Rutas-img img,
+.div-Listas-img img,
+.div-Checklist-img img,
+.div-Validacion-img img,
+.div-Zonas-img iframe,
+.div-ZonasDetalle-img iframe,
+.div-Rutas-img iframe,
+.div-Listas-img iframe,
+.div-Checklist-img iframe,
+.div-Validacion-img iframe {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+}
+
+/* ========================================================= */
+/* BOTONES */
+/* ========================================================= */
+
+section button {
+  background-color: #b8f3ff;
+  border: 2px solid #333;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  font-family: Kadwa;
+  margin-top: 10px;
+}

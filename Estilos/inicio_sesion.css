@@ -1,0 +1,68 @@
+/* Contenedor */
+
+/*Sección Formulario*/
+.Seccion-Formulario {
+  padding: 2.5rem;
+  border: 1.875rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.div-cont-formulario h2 {
+  text-align: center;
+}
+.div-cont-formulario {
+  background-color: #faf3e1;
+  padding: 1.875rem;
+  border: 0.125rem solid #faf3e1;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 500px;
+}
+.Campo {
+  background-color: #b8f3ff;
+  padding: 0.938rem;
+  border: 0.063rem;
+  border-radius: 1rem;
+  margin-bottom: 0.938rem;
+  justify-content: center;
+}
+
+.Formulario-cliente input[type="text"],
+.Formulario-cliente input[type="password"],
+.Formulario-cliente select {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  font-family: Kadwa;
+}
+.Formulario-cliente button {
+  background: #b8f3ff;
+  border: 2px solid #333;
+  padding: 12px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 20px 0;
+  justify-content: center;
+  text-align: center;
+  font-family: kadwa;
+}
+
+/* Opciones de abajo */
+.options {
+  margin-top: 5px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.options a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}

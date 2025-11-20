@@ -1,0 +1,70 @@
+/* Tarjeta de registro */
+.register-card {
+  width: 35%;
+  min-width: 320px;
+  background: #faf3e1;
+  margin: 120px auto;
+  padding: 40px 30px;
+  border-radius: 8px;
+  border: 2px solid #d9d9d9;
+}
+
+.register-card h2 {
+  text-align: center;
+  font-family: Kadwa;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+/* Formulario */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-card label {
+  font-family: Kadwa;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.register-card input {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: Kadwa;
+}
+
+.register-card input:focus {
+  outline: none;
+  border-color: #a4c3ff;
+}
+
+/* Botón crear cuenta */
+.btn-submit {
+  background-color: #b8f3ff;
+  border: 2px solid #333;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Kadwa;
+  margin-top: 10px;
+}
+
+/* Enlace volver */
+.back-link {
+  display: block;
+  margin-top: 20px;
+  font-family: Kadwa;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

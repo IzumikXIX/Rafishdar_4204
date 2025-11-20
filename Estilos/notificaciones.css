@@ -1,0 +1,96 @@
+/* ========================================================= */
+/* SECCIONES GENERALES */
+/* ========================================================= */
+
+section {
+  width: 100%;
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-gra1-Clima,
+.div-gra1-Rec-Seguridad,
+.div-gra1-Advertencias,
+.div-gra1-Especies {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  background-color: rgba(250, 243, 225, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+  backdrop-filter: blur(3px);
+  font-family: Kadwa;
+}
+
+/* ========================================================= */
+/* BLOQUES DE TEXTO */
+/* ========================================================= */
+
+.div-Clima-texto,
+.div-Rec-Seguridad-texto,
+.div-Advertencias-texto,
+.div-Especies-texto {
+  padding: 5px 10px;
+}
+
+.div-Clima-texto h2,
+.div-Rec-Seguridad-texto h2,
+.div-Advertencias-texto h2,
+.div-Especies-texto h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.div-Clima-texto p,
+.div-Rec-Seguridad-texto p,
+.div-Advertencias-texto p,
+.div-Especies-texto p {
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+}
+
+/* MEDIOS (IMÁGENES – VIDEOS – IFRAMES) */
+
+.div-Zonas-img,
+.div-ZonasDetalle-img,
+.div-Rutas-img,
+.div-Listas-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+}
+
+.div-Zonas-img img,
+.div-ZonasDetalle-img img,
+.div-Rutas-img img,
+.div-Listas-img img,
+.div-Zonas-img iframe,
+.div-ZonasDetalle-img iframe,
+.div-Rutas-img iframe,
+.div-Listas-img iframe {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 12px;
+}
+
+/* BOTONES */
+
+section button {
+  background-color: #b8f3ff;
+  border: 2px solid #333;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  font-family: Kadwa;
+  margin-top: 10px;
+}
