@@ -8,6 +8,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .div-gra1-Clima,
@@ -18,14 +19,15 @@ section {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 20px;
   align-items: center;
   background-color: rgba(250, 243, 225, 0.9);
   border: 2px solid #ddd;
   border-radius: 15px;
-  padding: 10px;
+  padding: 15px;
   backdrop-filter: blur(3px);
-  font-family: Kadwa;
+  font-family: "Kadwa", serif;
+  box-sizing: border-box;
 }
 
 /* ========================================================= */
@@ -36,7 +38,7 @@ section {
 .div-Rec-Seguridad-texto,
 .div-Advertencias-texto,
 .div-Especies-texto {
-  padding: 5px 10px;
+  padding: 10px;
 }
 
 .div-Clima-texto h2,
@@ -65,8 +67,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 120px; /* reducimos tamaño */
+  height: 120px;
 }
 
 .div-Zonas-img img,
@@ -78,8 +80,9 @@ section {
 .div-Rutas-img iframe,
 .div-Listas-img iframe {
   width: 100%;
-  max-width: 520px;
+  max-width: 300px; /* reducimos máximo */
   border-radius: 12px;
+  height: auto;
 }
 
 /* BOTONES */
@@ -91,6 +94,98 @@ section button {
   cursor: pointer;
   font-weight: bold;
   border-radius: 10px;
-  font-family: Kadwa;
+  font-family: "Kadwa", serif;
   margin-top: 10px;
+}
+
+/* ========================================================= */
+/* RESPONSIVE */
+/* ========================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .div-gra1-Clima,
+  .div-gra1-Rec-Seguridad,
+  .div-gra1-Advertencias,
+  .div-gra1-Especies {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .div-Zonas-img,
+  .div-ZonasDetalle-img,
+  .div-Rutas-img,
+  .div-Listas-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .div-Zonas-img img,
+  .div-ZonasDetalle-img img,
+  .div-Rutas-img img,
+  .div-Listas-img img,
+  .div-Zonas-img iframe,
+  .div-ZonasDetalle-img iframe,
+  .div-Rutas-img iframe,
+  .div-Listas-img iframe {
+    max-width: 250px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .div-Zonas-img,
+  .div-ZonasDetalle-img,
+  .div-Rutas-img,
+  .div-Listas-img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .div-Zonas-img img,
+  .div-ZonasDetalle-img img,
+  .div-Rutas-img img,
+  .div-Listas-img img,
+  .div-Zonas-img iframe,
+  .div-ZonasDetalle-img iframe,
+  .div-Rutas-img iframe,
+  .div-Listas-img iframe {
+    max-width: 220px;
+  }
+}
+
+/* Móviles pequeños (<480px) */
+@media (max-width: 480px) {
+  section {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .div-Zonas-img,
+  .div-ZonasDetalle-img,
+  .div-Rutas-img,
+  .div-Listas-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .div-Zonas-img img,
+  .div-ZonasDetalle-img img,
+  .div-Rutas-img img,
+  .div-Listas-img img,
+  .div-Zonas-img iframe,
+  .div-ZonasDetalle-img iframe,
+  .div-Rutas-img iframe,
+  .div-Listas-img iframe {
+    max-width: 180px;
+  }
+
+  section button {
+    width: 100%;
+    padding: 10px;
+  }
 }
