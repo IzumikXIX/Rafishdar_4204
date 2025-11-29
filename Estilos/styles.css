@@ -1,13 +1,19 @@
 /* FONDO GENERAL */
 
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Kadwa;
   position: relative;
   min-height: 100vh;
+  padding-top: 6.25rem; /* Evita que el contenido quede debajo del header */
 }
 
-/* HEADER SUPERIOR */
+/* HEADER SUPERIOR FIJO */
 
 .top-header {
   background-color: #f5d48b;
@@ -16,6 +22,12 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.125rem solid #ccc;
+  width: 100%;
+  flex-wrap: nowrap;
+  position: fixed; /* Mantiene el header visible al desplazarse */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que quede por encima del contenido */
 }
 
 .logo-container {
@@ -48,7 +60,8 @@ body {
 .nav-menu {
   display: flex;
   gap: 1.25rem;
-  padding: 0.625rem 1.25rem;
+  flex: 1; /* Ocupa el espacio entre logo y perfil */
+  justify-content: center; /* Centra los botones */
 }
 
 .nav-menu button {
@@ -58,7 +71,8 @@ body {
   cursor: pointer;
   font-weight: bold;
   border-radius: 0.625rem;
-  font-family: Cantata One;
+  font-family: "Cantata One", serif;
+  white-space: nowrap; /* Evita que los botones se rompan */
 }
 
 /* FONDO GLOBAL */
@@ -121,7 +135,6 @@ body {
 }
 
 /* Imagen */
-
 .card-img img {
   width: 90%;
   border-radius: 0.5rem;
@@ -129,7 +142,6 @@ body {
 }
 
 /* Botón */
-
 .card-btn {
   background-color: #b8f3ff;
   border: 0.125rem solid #333;
@@ -188,47 +200,32 @@ body {
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
-  .nav-menu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    width: 90%;
-  }
-
-  .cards-section {
-    gap: 1.5rem;
-  }
-
   .logo {
     height: 3.5rem;
+  }
+
+  .nav-menu button {
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 480px) {
   .top-header {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .logo-container {
-    gap: 0.5rem;
-  }
-
-  .nav-menu {
     padding: 0.5rem;
-    gap: 0.8rem;
   }
 
-  .card {
-    padding: 1rem;
-  }
-
-  .chat-button {
+  .logo {
     height: 3rem;
-    width: 3rem;
-    right: 1rem;
-    bottom: 1rem;
+  }
+
+  .profile-icon img {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .nav-menu button {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.85rem;
   }
 }
