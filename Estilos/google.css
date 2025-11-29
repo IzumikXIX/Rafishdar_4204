@@ -1,113 +1,43 @@
 /* Tarjeta especial para Google */
 .google-login-card {
   width: 32%;
-  min-width: 300px;
+  min-width: 18.75rem;
   background: #faf3e1;
-  margin: 120px auto;
-  padding: 40px 25px;
+  margin: 7.5rem auto;
+  padding: 2.5rem 1.5625rem;
   text-align: center;
-  border-radius: 8px;
-  border: 2px solid #d9d9d9;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #d9d9d9;
 }
 
+/* Título */
 .google-login-card h2 {
   font-family: Kadwa;
-  margin-bottom: 25px;
-  font-size: 24px;
+  margin-bottom: 1.5625rem;
+  font-size: 1.5rem;
 }
 
 /* Caja estilo Google */
 .google-box {
-  display: flex; /* Tarjeta especial para Google */
-  .google-login-card {
-    width: 32%;
-    min-width: 300px;
-    background: #faf3e1;
-    margin: 120px auto;
-    padding: 40px 25px;
-    text-align: center;
-    border-radius: 8px;
-    border: 2px solid #d9d9d9;
-  }
-
-  .google-login-card h2 {
-    font-family: Kadwa;
-    margin-bottom: 25px;
-    font-size: 24px;
-  }
-
-  /* Caja estilo Google */
-  .google-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 15px;
-    background: white;
-    border: 2px solid #ddd;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-bottom: 25px;
-  }
-
-  .google-box img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .google-box p {
-    font-size: 16px;
-    margin: 0;
-    font-family: Kadwa;
-    color: #333;
-  }
-
-  /* Botón continuar */
-  .btn-google-continue {
-    width: 70%;
-    background-color: #b8f3ff;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #333;
-    font-size: 16px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: Kadwa;
-    margin-top: 15px;
-  }
-
-  /* Enlace volver */
-  .back-link {
-    display: block;
-    margin-top: 20px;
-    font-family: Kadwa;
-    text-decoration: none;
-    color: #333;
-    font-size: 15px;
-  }
-
-  .back-link:hover {
-    text-decoration: underline;
-  }
-
+  display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
   background: white;
-  border: 2px solid #ddd;
-  padding: 12px 18px;
-  border-radius: 8px;
+  border: 0.125rem solid #ddd;
+  padding: 0.75rem 1.125rem;
+  border-radius: 0.5rem;
   cursor: pointer;
-  margin-bottom: 25px;
+  margin-bottom: 1.5625rem;
 }
 
 .google-box img {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .google-box p {
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
   font-family: Kadwa;
   color: #333;
@@ -117,26 +47,70 @@
 .btn-google-continue {
   width: 70%;
   background-color: #b8f3ff;
-  padding: 12px;
-  border-radius: 10px;
-  border: 2px solid #333;
-  font-size: 16px;
+  padding: 0.75rem;
+  border-radius: 0.625rem;
+  border: 0.125rem solid #333;
+  font-size: 1rem;
   cursor: pointer;
   font-weight: bold;
   font-family: Kadwa;
-  margin-top: 15px;
+  margin-top: 0.9375rem;
 }
 
 /* Enlace volver */
 .back-link {
   display: block;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-family: Kadwa;
   text-decoration: none;
   color: #333;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .back-link:hover {
   text-decoration: underline;
+}
+
+/*Responsive*/
+
+@media (max-width: 600px) {
+  .google-login-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+    text-align: left;
+  }
+
+  .google-login-card h2 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 1.25rem;
+  }
+
+  .google-box {
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .google-box img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .btn-google-continue {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+
+  .back-link {
+    text-align: left;
+    margin-top: 1.5rem;
+  }
 }

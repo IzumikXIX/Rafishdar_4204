@@ -1,10 +1,10 @@
 .text-who {
-  max-width: 1000px;
+  max-width: 62.5rem;
   margin: 4rem auto;
   padding: 2rem;
-  background: #ffffffd9; /* fondo blanco semi-transparente */
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background: #ffffffd9;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.15);
   font-family: Kadwa, Cantata one;
   line-height: 1.7;
 }
@@ -12,11 +12,11 @@
 /* Título */
 .text-who h2 {
   font-size: 2.2rem;
-  color: #004d61; /* color acento */
+  color: #004d61;
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
-  border-bottom: 3px solid #00bcd4;
+  border-bottom: 0.1875rem solid #00bcd4;
   display: inline-block;
   padding-bottom: 0.3rem;
 }
@@ -37,15 +37,60 @@
 
 .text-who li {
   margin-bottom: 0.8rem;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #444;
   position: relative;
-  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Ícono personalizado para lista */
+/* Icono personalizado */
 .text-who li::before {
   position: absolute;
   left: -1.8rem;
   color: #00bcd4;
+}
+
+/* MEDIA QUERIES RESPONSIVE */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .text-who {
+    padding: 1.5rem;
+    margin: 3rem 1rem;
+  }
+
+  .text-who h2 {
+    font-size: 1.9rem;
+  }
+
+  .text-who p,
+  .text-who li {
+    font-size: 1rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .text-who {
+    padding: 1.2rem;
+    margin: 2rem 0.5rem;
+  }
+
+  .text-who h2 {
+    font-size: 1.6rem;
+    padding-bottom: 0.2rem;
+  }
+
+  .text-who p,
+  .text-who li {
+    font-size: 0.95rem;
+  }
+
+  .text-who ul {
+    padding-left: 1rem;
+  }
+
+  .text-who li::before {
+    left: -1.2rem;
+  }
 }

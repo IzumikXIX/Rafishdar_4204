@@ -1,6 +1,6 @@
 /* Footer general */
 .footer {
-  background-color: #e9bf64; /* Fondo oscuro para contraste */
+  background-color: #e9bf64;
   color: rgb(0, 0, 0);
   padding: 2rem 1rem;
   font-family: roboto;
@@ -15,7 +15,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: auto;
   gap: 1rem;
 }
@@ -23,20 +23,20 @@
 /* Marca o logotipo */
 .footer-brand {
   flex: 1;
-  min-width: 200px;
-  font-size: 19px;
+  min-width: 12.5rem;
+  font-size: 1.1875rem;
 }
 
 .footer-logo {
-  width: 80px;
+  width: 5rem;
   height: auto;
   margin-bottom: 0.5rem;
 }
 
 .footer-contact {
   flex: 1;
-  min-width: 200px;
-  font-size: 19px;
+  min-width: 12.5rem;
+  font-size: 1.1875rem;
   font-family: roboto;
   flex-direction: column;
   gap: 0.3rem;
@@ -50,8 +50,8 @@
 /* Enlaces legales */
 .footer-links {
   flex: 1;
-  min-width: 200px;
-  font-size: 19px;
+  min-width: 12.5rem;
+  font-size: 1.1875rem;
 }
 
 .footer-links a {
@@ -68,13 +68,13 @@
 /* Redes sociales con íconos */
 .footer-social {
   flex: 1;
-  min-width: 200px;
-  font-size: 19px;
+  min-width: 12.5rem;
+  font-size: 1.1875rem;
 }
 
 .social-icon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   margin-right: 0.5rem;
   transition: transform 0.2s ease-in-out;
 }
@@ -83,7 +83,7 @@
   transform: scale(1.2);
 }
 
-/* Responsive para pantallas pequeñas */
+/*Responsive*/
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

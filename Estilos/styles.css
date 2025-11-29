@@ -1,4 +1,5 @@
-/* Fondo general */
+/* FONDO GENERAL */
+
 body {
   margin: 0;
   font-family: Kadwa;
@@ -6,23 +7,21 @@ body {
   min-height: 100vh;
 }
 
-/* ========================================================= */
 /* HEADER SUPERIOR */
-/* ========================================================= */
 
 .top-header {
   background-color: #f5d48b;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 0.125rem solid #ccc;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
   cursor: pointer;
 }
 
@@ -32,44 +31,40 @@ body {
 }
 
 .logo {
-  height: 70px;
+  height: 4.375rem;
 }
 
 .profile-icon img {
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
-  background: white;
-  border: 1px solid #000;
+  background: #fff;
+  border: 0.0625rem solid #000;
   cursor: pointer;
 }
 
-/* ========================================================= */
-/* MENÚ PRINCIPAL NORMALIZADO */
-/* ========================================================= */
+/* MENÚ PRINCIPAL */
 
 .nav-menu {
   display: flex;
-  gap: 20px;
-  padding: 10px 20px;
+  gap: 1.25rem;
+  padding: 0.625rem 1.25rem;
 }
 
 .nav-menu button {
   background-color: #b8f3ff;
-  border: 2px solid #333;
-  padding: 8px 20px;
+  border: 0.125rem solid #333;
+  padding: 0.5rem 1.25rem;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-family: Cantata One;
 }
 
-/* ========================================================= */
 /* FONDO GLOBAL */
-/* ========================================================= */
 
 .background-image {
-  position: fixed; /* Fondo en toda la página */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -78,35 +73,32 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -5; /* detrás del contenido */
+  z-index: -5;
 }
 
-/* ========================================================= */
 /* TARJETAS */
-/* ========================================================= */
 
-/* CONTENEDOR GLOBAL */
 .cards-wrapper {
-  margin-top: 30px; /* Separación justa sin caer debajo del header */
+  margin-top: 1.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
 }
 
-/* FILAS DE TARJETAS */
 .cards-section {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 1.875rem;
   flex-wrap: wrap;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
+/* MAPA */
 .map-container {
   width: 100%;
-  height: 200px; /* Puedes aumentar si quieres */
-  border-radius: 8px;
+  height: 12.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -118,77 +110,125 @@ body {
 
 /* TARJETA */
 .card {
-  width: 300px;
+  width: 18.75rem;
   background-color: rgba(250, 243, 225, 0.9);
-  border: 2px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
+  border: 0.125rem solid #ddd;
+  border-radius: 0.625rem;
+  padding: 1.25rem;
   text-align: center;
   font-family: Kadwa;
   backdrop-filter: blur(3px);
 }
 
 /* Imagen */
+
 .card-img img {
   width: 90%;
-  border-radius: 8px;
-  margin: 10px 0;
+  border-radius: 0.5rem;
+  margin: 0.625rem 0;
 }
 
 /* Botón */
+
 .card-btn {
   background-color: #b8f3ff;
-  border: 2px solid #333;
-  padding: 10px 20px;
+  border: 0.125rem solid #333;
+  padding: 0.625rem 1.25rem;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-weight: bold;
   font-family: Kadwa;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 /* Lista */
 .card-list {
   list-style: none;
   padding: 0;
-  margin: 15px 0 20px 0;
+  margin: 0.9375rem 0 1.25rem;
   text-align: left;
 }
 
 .card-list li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
-/* Texto adicional */
+/* Texto */
 .card-text {
-  margin: 18px 0 25px;
-  font-size: 15px;
-  line-height: 1.4em;
+  margin: 1.125rem 0 1.5625rem;
+  font-size: 0.9375rem;
+  line-height: 1.4;
 }
 
 /* Botones múltiples */
 .card-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 0.625rem;
   flex-wrap: wrap;
 }
 
-/* ========================================================= */
 /* CHAT FLOTANTE */
-/* ========================================================= */
 
 .chat-button {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  height: 55px;
-  width: 55px;
+  bottom: 1.875rem;
+  right: 1.875rem;
+  height: 3.4375rem;
+  width: 3.4375rem;
   background-color: #a4c3ff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #333;
-  font-size: 24px;
+  border: 0.125rem solid #333;
+  font-size: 1.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .cards-section {
+    gap: 1.5rem;
+  }
+
+  .logo {
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .logo-container {
+    gap: 0.5rem;
+  }
+
+  .nav-menu {
+    padding: 0.5rem;
+    gap: 0.8rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .chat-button {
+    height: 3rem;
+    width: 3rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
