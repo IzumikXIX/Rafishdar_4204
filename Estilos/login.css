@@ -1,111 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Prociono&display=swap");
 
-/* ============================== */
 /* CONTENEDOR PRINCIPAL */
-/* ============================== */
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ocupa toda la pantalla */
+  min-height: 100vh;
   width: 100%;
   background: linear-gradient(135deg, #f5d48b 0%, #ffbe32 100%);
   padding: 1.25rem;
   box-sizing: border-box;
-  position: relative;
-  overflow: hidden;
 }
 
-/* Opcional: agregar un efecto sutil de animación de fondo */
-.login-container::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle at center,
-    rgba(255, 255, 255, 0.2),
-    transparent 70%
-  );
-  animation: rotateBg 20s linear infinite;
-  z-index: 0;
-}
-
-@keyframes rotateBg {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* ============================== */
 /* CAJA DEL FORMULARIO */
-/* ============================== */
+
 .login-box {
-  position: relative;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   padding: 2.5rem;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
   width: 100%;
   max-width: 28rem;
   text-align: center;
-  z-index: 1;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.login-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .login-box h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   color: #333;
   font-size: 2rem;
   font-family: "Prociono", serif;
 }
 
-/* ============================== */
 /* GRUPOS DE INPUT */
-/* ============================== */
+
 .input-group {
-  margin-bottom: 1.5rem;
-  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .input-group label {
-  display: block;
-  margin-bottom: 0.5rem;
   font-weight: 600;
   color: #555;
+  font-size: 0.95rem;
+  width: 100%;
+  text-align: left;
+  font-family: "Prociono", serif;
 }
 
 .input-group input {
-  width: 100%;
+  width: 90%;
   padding: 0.75rem 1rem;
-  border: 0.125rem solid #ccc;
+  border: 1px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
   font-family: "Prociono", serif;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 .input-group input:focus {
-  border-color: #b8f3ff;
-  box-shadow: 0 0 0.5rem rgba(184, 243, 255, 0.5);
+  border-color: #2575fc;
+  box-shadow: 0 0 0.5rem rgba(37, 117, 252, 0.3);
   outline: none;
 }
 
-/* ============================== */
 /* BOTÓN */
-/* ============================== */
+
 .login-button {
-  width: 100%;
+  width: 90%;
   padding: 0.85rem;
   border: none;
   border-radius: 0.5rem;
@@ -115,7 +84,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 1rem;
+  margin: 0 auto; /* Centra el botón */
   font-family: "Prociono", serif;
 }
 
@@ -125,26 +94,17 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-/* ============================== */
 /* RESPONSIVE */
-/* ============================== */
+
 @media (max-width: 768px) {
-  .login-container {
-    padding: 1rem;
-  }
-
   .login-box {
+    max-width: 95%;
     padding: 2rem;
-    max-width: 90%;
   }
 
-  .login-box h2 {
-    font-size: 1.8rem;
-    text-align: center;
-  }
-
-  .input-group input {
-    padding: 0.85rem;
+  .input-group input,
+  .login-button {
+    width: 95%;
   }
 }
 
@@ -158,12 +118,8 @@
     font-size: 1.6rem;
   }
 
-  .input-group input {
-    padding: 0.75rem;
-  }
-
+  .input-group input,
   .login-button {
-    font-size: 1rem;
-    padding: 0.75rem;
+    width: 100%;
   }
 }
