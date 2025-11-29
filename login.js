@@ -4,7 +4,7 @@ function validarLogin(event) {
   event.preventDefault();
 
   // Clave estática para la demo
-  const CLAVE_SECRETA = "Proy_Rafishdar";
+  const CLAVE_SECRETA = "proy_rafishdar";
   const passwordInput = document.getElementById("password").value;
 
   // 2. Realizar la verificación
