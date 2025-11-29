@@ -1,10 +1,8 @@
-/* ========================================================= */
 /* SECCIONES GENERALES */
-/* ========================================================= */
 
 section {
   width: 100%;
-  padding: 60px 40px;
+  padding: 3.75rem 2.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,22 +15,20 @@ section {
 .div-gra1-Checklist,
 .div-gra1-Validacion {
   width: 100%;
-  max-width: 1000px;
+  max-width: 62.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 2.5rem;
   align-items: center;
   background-color: rgba(250, 243, 225, 0.9);
-  border: 2px solid #ddd;
-  border-radius: 15px;
-  padding: 40px;
-  backdrop-filter: blur(3px);
+  border: 0.125rem solid #ddd;
+  border-radius: 0.9375rem;
+  padding: 2.5rem;
+  backdrop-filter: blur(0.1875rem);
   font-family: Kadwa;
 }
 
-/* ========================================================= */
 /* BLOQUES DE TEXTO */
-/* ========================================================= */
 
 .div-Zonas-texto,
 .div-ZonasDetalle-texto,
@@ -40,7 +36,7 @@ section {
 .div-Listas-texto,
 .div-Checklist-texto,
 .div-Validacion-texto {
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
 }
 
 .div-Zonas-texto h2,
@@ -49,8 +45,8 @@ section {
 .div-Listas-texto h2,
 .div-Checklist-texto h2,
 .div-Validacion-texto h2 {
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 1.875rem;
+  margin-bottom: 0.9375rem;
 }
 
 .div-Zonas-texto p,
@@ -59,14 +55,12 @@ section {
 .div-Listas-texto p,
 .div-Checklist-texto p,
 .div-Validacion-texto p {
-  font-size: 16px;
-  line-height: 1.4em;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
 }
 
-/* ========================================================= */
 /* MEDIOS (IMÁGENES – VIDEOS – IFRAMES) */
-/* ========================================================= */
 
 .div-Zonas-img,
 .div-ZonasDetalle-img,
@@ -77,8 +71,8 @@ section {
   display: flex;
   justify-content: right;
   align-items: right;
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
 }
 
 .div-Zonas-img img,
@@ -94,21 +88,78 @@ section {
 .div-Checklist-img iframe,
 .div-Validacion-img iframe {
   width: 100%;
-  max-width: 520px;
-  border-radius: 12px;
+  max-width: 32.5rem;
+  border-radius: 0.75rem;
 }
 
-/* ========================================================= */
 /* BOTONES */
-/* ========================================================= */
 
 section button {
   background-color: #b8f3ff;
-  border: 2px solid #333;
-  padding: 10px 25px;
+  border: 0.125rem solid #333;
+  padding: 0.625rem 1.5625rem;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   font-family: Kadwa;
-  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .div-gra1-Zonas,
+  .div-gra1-ZonasDetalle,
+  .div-gra1-Rutas,
+  .div-gra1-Listas,
+  .div-gra1-Checklist,
+  .div-gra1-Validacion {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .div-Zonas-img,
+  .div-ZonasDetalle-img,
+  .div-Rutas-img,
+  .div-Listas-img,
+  .div-Checklist-img,
+  .div-Validacion-img {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .div-Zonas-img img,
+  .div-ZonasDetalle-img img,
+  .div-Rutas-img img,
+  .div-Listas-img img,
+  .div-Checklist-img img,
+  .div-Validacion-img img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .div-Zonas-texto h2,
+  .div-ZonasDetalle-texto h2,
+  .div-Rutas-texto h2,
+  .div-Listas-texto h2,
+  .div-Checklist-texto h2,
+  .div-Validacion-texto h2 {
+    font-size: 1.5rem;
+  }
+
+  .div-Zonas-texto p,
+  .div-ZonasDetalle-texto p,
+  .div-Rutas-texto p,
+  .div-Listas-texto p,
+  .div-Checklist-texto p,
+  .div-Validacion-texto p {
+    font-size: 0.95rem;
+  }
 }
