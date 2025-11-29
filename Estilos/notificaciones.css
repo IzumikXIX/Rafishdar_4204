@@ -1,8 +1,10 @@
+/* ========================================================= */
 /* SECCIONES GENERALES */
+/* ========================================================= */
 
 section {
   width: 100%;
-  padding: 3.75rem 2.5rem;
+  padding: 60px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,43 +15,45 @@ section {
 .div-gra1-Advertencias,
 .div-gra1-Especies {
   width: 100%;
-  max-width: 75rem;
+  max-width: 1200px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5625rem;
+  gap: 25px;
   align-items: center;
-  background-color: #faf3e1e6;
-  border: 0.125rem solid #ddd;
-  border-radius: 0.9375rem;
-  padding: 0.625rem;
-  backdrop-filter: blur(0.1875rem);
+  background-color: rgba(250, 243, 225, 0.9);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  padding: 10px;
+  backdrop-filter: blur(3px);
   font-family: Kadwa;
 }
 
+/* ========================================================= */
 /* BLOQUES DE TEXTO */
+/* ========================================================= */
 
 .div-Clima-texto,
 .div-Rec-Seguridad-texto,
 .div-Advertencias-texto,
 .div-Especies-texto {
-  padding: 0.3125rem 0.625rem;
+  padding: 5px 10px;
 }
 
 .div-Clima-texto h2,
 .div-Rec-Seguridad-texto h2,
 .div-Advertencias-texto h2,
 .div-Especies-texto h2 {
-  font-size: 1.875rem;
-  margin-bottom: 0.9375rem;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .div-Clima-texto p,
 .div-Rec-Seguridad-texto p,
 .div-Advertencias-texto p,
 .div-Especies-texto p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 1.25rem;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin-bottom: 20px;
 }
 
 /* MEDIOS (IMÁGENES – VIDEOS – IFRAMES) */
@@ -61,8 +65,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 9.375rem;
-  height: 9.375rem;
+  width: 150px;
+  height: 150px;
 }
 
 .div-Zonas-img img,
@@ -74,68 +78,19 @@ section {
 .div-Rutas-img iframe,
 .div-Listas-img iframe {
   width: 100%;
-  max-width: 32.5rem;
-  border-radius: 0.75rem;
+  max-width: 520px;
+  border-radius: 12px;
 }
 
 /* BOTONES */
 
 section button {
   background-color: #b8f3ff;
-  border: 0.125rem solid #333;
-  padding: 0.625rem 1.5625rem;
+  border: 2px solid #333;
+  padding: 10px 25px;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 0.625rem;
+  border-radius: 10px;
   font-family: Kadwa;
-  margin-top: 0.625rem;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 62rem) {
-  /* 992px */
-  .div-gra1-Clima,
-  .div-gra1-Rec-Seguridad,
-  .div-gra1-Advertencias,
-  .div-gra1-Especies {
-    grid-template-columns: 1fr;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .div-Zonas-img,
-  .div-ZonasDetalle-img,
-  .div-Rutas-img,
-  .div-Listas-img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 600px) {
-  section {
-    padding: 2rem 1rem;
-  }
-
-  .div-gra1-Clima,
-  .div-gra1-Rec-Seguridad,
-  .div-gra1-Advertencias,
-  .div-gra1-Especies {
-    gap: 1rem;
-  }
-
-  .div-Clima-texto h2,
-  .div-Rec-Seguridad-texto h2,
-  .div-Advertencias-texto h2,
-  .div-Especies-texto h2 {
-    font-size: 1.5rem;
-  }
-
-  .div-Clima-texto p,
-  .div-Rec-Seguridad-texto p,
-  .div-Advertencias-texto p,
-  .div-Especies-texto p {
-    font-size: 0.95rem;
-  }
+  margin-top: 10px;
 }
