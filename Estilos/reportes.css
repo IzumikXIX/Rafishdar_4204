@@ -1,5 +1,4 @@
 /* RESET */
-
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@ body {
 }
 
 /* CONTENEDOR PRINCIPAL */
-
 .reportes-container {
   width: 100%;
   padding: 2.5rem 3rem;
@@ -18,7 +16,6 @@ body {
 }
 
 /* BUSCADOR */
-
 .search-bar {
   width: 100%;
   max-width: 56.25rem;
@@ -32,7 +29,6 @@ body {
   margin-bottom: 1.6rem;
 }
 
-/* INPUT */
 .search-bar input {
   border: none;
   outline: none;
@@ -43,7 +39,6 @@ body {
 }
 
 /* CONTENEDOR DE REPORTES Y BOTONES */
-
 .content-wrapper {
   display: flex;
   justify-content: center;
@@ -54,7 +49,6 @@ body {
 }
 
 /* LISTA DE REPORTES */
-
 .report-list {
   flex: 1;
   background-color: rgba(250, 243, 225, 0.95);
@@ -77,7 +71,6 @@ body {
 }
 
 /* BOTONES LATERALES */
-
 .side-buttons {
   width: 12.5rem;
   display: flex;
@@ -96,8 +89,26 @@ body {
 }
 
 /* RESPONSIVE */
-
 /* Tablets */
+@media (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side-buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .side-buttons button {
+    flex: 1 1 45%;
+  }
+}
+
 @media (max-width: 768px) {
   .content-wrapper {
     flex-direction: column;
@@ -150,5 +161,27 @@ body {
 
   .side-buttons button {
     width: 100%;
+  }
+}
+
+/* Móviles pequeños (<360px) */
+@media (max-width: 360px) {
+  .report-item {
+    padding: 0.8rem;
+  }
+
+  .report-details {
+    gap: 0.6rem;
+    font-size: 0.85rem;
+    flex-direction: column;
+  }
+
+  .side-buttons button {
+    font-size: 0.85rem;
+    padding: 0.6rem;
+  }
+
+  .search-bar input {
+    font-size: 0.9rem;
   }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="./Estilos/footer.css" />
   </head>
   <body>
-    <!-- FONDO -->
     <div class="background-image"></div>
 
-    <!-- HEADER -->
     <header class="top-header">
       <a href="landing_page.html">
         <div class="logo-container">
@@ -24,7 +22,6 @@
         </div>
       </a>
 
-      <!-- MENÚ -->
       <nav class="nav-menu">
         <a href="./barra/zonas.html"><button>Zona</button></a>
         <a href="./barra/mapas.html"><button>Mapas</button></a>
@@ -41,16 +38,12 @@
         </div>
       </a>
     </header>
-    <!-- CHAT -->
-    <div class="chat-button">
-      <span>💬</span>
-    </div>
 
-    <!-- TARJETAS -->
+    <div class="chat-button"><span>💬</span></div>
+
     <main class="cards-wrapper">
-      <!-- Fila 1 -->
       <section class="cards-section">
-        <div class="card">
+        <article class="card">
           <h3>Análisis meteorológico</h3>
           <div class="card-img map-container">
             <iframe
@@ -65,16 +58,15 @@
           >
             <button class="card-btn">Ver más</button>
           </a>
-        </div>
+        </article>
 
-        <!-- Tarjeta Google Maps -->
-        <div class="card">
+        <article class="card">
           <h3>Mapas</h3>
           <div class="card-img map-container">
             <iframe
+              width="100%"
+              height="200"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7803.7420737853445!2d-77.14562685760431!3d-12.052393114688916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cb523bc358ef%3A0x19e25a2a04716282!2sPuerto%20del%20Callao!5e0!3m2!1ses-419!2spe!4v1763259500598!5m2!1ses-419!2spe"
-              width="600"
-              height="450"
               style="border: 0"
               allowfullscreen=""
               loading="lazy"
@@ -84,9 +76,9 @@
           <a href="https://www.google.com/maps">
             <button class="card-btn">Ver más</button>
           </a>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Indicadores de eficiencia</h3>
           <ul class="card-list">
             <li>⛽ Consumo de combustible</li>
@@ -94,12 +86,11 @@
             <li>💰 Rentabilidad</li>
           </ul>
           <button class="card-btn">Leyenda</button>
-        </div>
+        </article>
       </section>
 
-      <!-- Fila 2 -->
       <section class="cards-section">
-        <div class="card">
+        <article class="card">
           <h3>Lista de verificación</h3>
           <p class="card-text">
             Organiza y asegura que el equipo, documentos y materiales estén
@@ -109,9 +100,9 @@
             <button class="card-btn">Crear lista</button>
             <button class="card-btn">Modificar lista existente</button>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Validación de checklist</h3>
           <p class="card-text">
             Verifica y marca todos los ítems que necesitas antes de zarpar.
@@ -119,9 +110,9 @@
           <div class="card-buttons">
             <button class="card-btn">Validar checklist</button>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <h3>Recordatorios</h3>
           <p class="card-text">
             Para inspecciones previas del barco y el equipo. Puedes configurar
@@ -131,79 +122,67 @@
             <button class="card-btn">Configurar</button>
             <button class="card-btn">Añadir recordatorio</button>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
-    <!-- PIE DE PAGINA -->
-
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img
-              src="./Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
-              alt="Logo"
-              class="footer-logo"
-            />
-            <p>Rafishdar</p>
-            <small>© 2025 Todos los derechos reservados</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legalidad</h4>
-            <a href="./Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="./Documentos/Terminos-y-condiciones"
-              >Términos y Condiciones</a
-            >
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="./Documentos/LeyProteccionDatos.pdf"
-              >Protección de Datos</a
-            >
-          </div>
-
-          <!--Contacto-->
-          <div class="footer-contact">
-            <h4>Contacto</h4>
-            <p>Háblanos si tienes alguna duda</p>
-            <p>Atención 24h</p>
-          </div>
-
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos en nuestra redes</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="./Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>Rafishdar</p>
+          <small>© 2025 Todos los derechos reservados</small>
         </div>
-      </footer>
-    </section>
+
+        <div class="footer-links">
+          <h4>Legalidad</h4>
+          <a href="./Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <a href="./Documentos/Terminos-y-condiciones.pdf"
+            >Términos y Condiciones</a
+          >
+          <a href="./Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>Háblanos si tienes alguna duda</p>
+          <p>Atención 24h</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos en nuestra redes</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

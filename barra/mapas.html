@@ -4,25 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rafishdar</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="../Estilos/styles.css" />
     <link rel="stylesheet" href="../Estilos/footer.css" />
     <link rel="stylesheet" href="../Estilos/mapas.css" />
   </head>
+
   <body>
-    <!-- FONDO -->
+    <!-- FONDO GLOBAL -->
     <div class="background-image"></div>
 
     <!-- HEADER -->
     <header class="top-header">
-      <a href="../landing_page.html">
-        <div class="logo-container">
-          <img
-            src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
-            class="logo"
-            alt="Logo"
-          />
-          <h1>RAFISHDAR</h1>
-        </div>
+      <a href="../landing_page.html" class="logo-container">
+        <img
+          src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+          class="logo"
+          alt="Logo"
+        />
+        <h1>RAFISHDAR</h1>
       </a>
 
       <!-- MENÚ -->
@@ -40,7 +41,8 @@
         </div>
       </a>
     </header>
-    <!-- CHAT -->
+
+    <!-- BOTÓN CHAT -->
     <div class="chat-button">
       <span>💬</span>
     </div>
@@ -52,37 +54,41 @@
       <label><input type="checkbox" /> Velocidad de captura</label>
     </section>
 
+    <!-- MAPA + LEYENDA -->
     <section class="map-section">
+      <!-- Mapa -->
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22071.517736436617!2d-77.16670425212253!3d-12.062091353497774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1763234531777!5m2!1ses-419!2spe"
-          width="500px"
-          height="700px"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        >
+        </iframe>
       </div>
 
+      <!-- Leyenda -->
       <div class="legend-box">
         <h3>Leyenda</h3>
+
         <div class="legend-item">
           <span class="circle low"></span> Menos concentración
         </div>
+
         <div class="legend-item">
           <span class="circle medium"></span> Concentración media
         </div>
+
         <div class="legend-item">
           <span class="circle high"></span> Alta concentración
         </div>
       </div>
     </section>
 
-    <!-- PIE DE PAGINA -->
-
+    <!-- FOOTER -->
     <section id="footer">
       <footer class="footer">
         <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
+          <!-- Marca -->
           <div class="footer-brand">
             <img
               src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
@@ -93,56 +99,65 @@
             <small>© 2025 Todos los derechos reservados</small>
           </div>
 
-          <!-- Enlaces legales -->
+          <!-- Legal -->
           <div class="footer-links">
             <h4>Legalidad</h4>
-            <a href="../Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="../Documentos/Terminos-y-condiciones.pdf"
-              >Términos y Condiciones</a
-            >
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="../Documentos/LeyProteccionDatos.pdf"
-              >Protección de Datos</a
-            >
+
+            <a href="../Documentos/3.politica-privacidad.pdf">
+              Política de Privacidad
+            </a>
+
+            <a href="../Documentos/Terminos-y-condiciones.pdf">
+              Términos y Condiciones
+            </a>
+
+            <a href="../Documentos/LeyProteccionDatos.pdf">
+              Protección de Datos
+            </a>
           </div>
 
-          <!--Contacto-->
+          <!-- Contacto -->
           <div class="footer-contact">
             <h4>Contacto</h4>
             <p>Háblanos si tienes alguna duda</p>
             <p>Atención 24h</p>
           </div>
 
-          <!-- Redes sociales con íconos personalizados -->
+          <!-- Redes sociales -->
           <div class="footer-social">
-            <h4>Síguenos en nuestra redes</h4>
-            <a href="#"
-              ><img
+            <h4>Síguenos en nuestras redes</h4>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                class="social-icon"
                 alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                class="social-icon"
                 alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                class="social-icon"
                 alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
                 class="social-icon"
-            /></a>
+                alt="Twitter"
+              />
+            </a>
           </div>
         </div>
       </footer>

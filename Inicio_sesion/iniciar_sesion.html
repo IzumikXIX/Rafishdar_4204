@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafishdar/IniciarSesion</title>
+    <title>Rafishdar / Iniciar Sesión</title>
     <link rel="stylesheet" href="../Estilos/inicio_sesion.css" />
     <link rel="stylesheet" href="../Estilos/styles.css" />
     <link rel="stylesheet" href="../Estilos/footer.css" />
@@ -42,21 +42,20 @@
         </div>
       </a>
     </header>
+
     <!-- CHAT -->
-    <div class="chat-button">
-      <span>💬</span>
-    </div>
+    <div class="chat-button"><span>💬</span></div>
 
-    <!--*Seccion-Formulario-->
-
-    <section class="Seccion-Formulario">
-      <div style="text-align: center" class="div-cont-formulario">
+    <!-- Sección principal -->
+    <main class="Seccion-Formulario">
+      <div class="div-cont-formulario" style="text-align: center">
         <h2>Iniciar sesión</h2>
         <hr />
-        <br />
+
         <form class="Formulario-cliente">
-          <!--INPUT TEXT-->
+          <!-- USUARIO -->
           <div class="Campo">
+            <label for="Usuario" class="sr-only">Usuario</label>
             <input
               type="text"
               id="Usuario"
@@ -64,8 +63,10 @@
               placeholder="Usuario"
             />
           </div>
-          <br />
-          <div style="text-align: center" class="Campo">
+
+          <!-- CONTRASEÑA -->
+          <div class="Campo">
+            <label for="Contraseña" class="sr-only">Contraseña</label>
             <input
               type="password"
               id="Contraseña"
@@ -73,92 +74,84 @@
               placeholder="Contraseña"
             />
           </div>
-          <br />
+
+          <!-- OPCIONES -->
           <div class="options">
             <label><input type="checkbox" /> Recordarme</label>
             <a href="#">¿Olvidaste tu contraseña?</a>
           </div>
-          <br />
-          <button type="submit">Iniciar Sesión</button>
-          <br />
-          <a href="usuariopage.html" class="back-link">← Volver</a>
 
-          <br />
-          <hr />
-          <br />
+          <button type="submit">Iniciar Sesión</button>
+
+          <a href="../Inicio_sesion/usuariopage.html" class="back-link"
+            >← Volver</a
+          >
         </form>
       </div>
-    </section>
+    </main>
 
-    <!-- PIE DE PAGINA -->
-
-    <section id="footer">
-      <footer class="footer">
-        <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
-          <div class="footer-brand">
-            <img
-              src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
-              alt="Logo"
-              class="footer-logo"
-            />
-            <p>Rafishdar</p>
-            <small>© 2025 Todos los derechos reservados</small>
-          </div>
-
-          <!-- Enlaces legales -->
-          <div class="footer-links">
-            <h4>Legalidad</h4>
-            <a href="../Documentos/3.politica-privacidad.pdf"
-              >Política de Privacidad</a
-            >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
-            <a href="../Documentos/Terminos-y-condiciones.pdf"
-              >Términos y Condiciones</a
-            >
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
-            <a href="../Documentos/LeyProteccionDatos.pdf"
-              >Protección de Datos</a
-            >
-          </div>
-
-          <!--Contacto-->
-          <div class="footer-contact">
-            <h4>Contacto</h4>
-            <p>Háblanos si tienes alguna duda</p>
-            <p>Atención 24h</p>
-          </div>
-
-          <!-- Redes sociales con íconos personalizados -->
-          <div class="footer-social">
-            <h4>Síguenos en nuestra redes</h4>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
-                alt="Facebook"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-                alt="Instagram"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
-                alt="LinkedIn"
-                class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
-                alt="Twitter"
-                class="social-icon"
-            /></a>
-          </div>
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre de sitio -->
+        <div class="footer-brand">
+          <img
+            src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>Rafishdar</p>
+          <small>© 2025 Todos los derechos reservados</small>
         </div>
-      </footer>
-    </section>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legalidad</h4>
+          <a href="../Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <a href="../Documentos/Terminos-y-condiciones.pdf"
+            >Términos y Condiciones</a
+          >
+          <a href="../Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>Háblanos si tienes alguna duda</p>
+          <p>Atención 24h</p>
+        </div>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+          <h4>Síguenos en nuestras redes</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
