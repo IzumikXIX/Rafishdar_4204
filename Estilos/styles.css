@@ -184,6 +184,7 @@ body {
 
 .chat-button {
   position: fixed;
+  z-index: 1000;
   bottom: 1.875rem;
   right: 1.875rem;
   height: 3.4375rem;
