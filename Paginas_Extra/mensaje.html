@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+    <link rel="stylesheet" href="../Estilos/footer.css" />
+    <link rel="stylesheet" href="../Estilos/mensajes.css" />
+    <link rel="stylesheet" href="../Estilos/menu_toggle.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+
+    <header class="top-header">
+      <a href="../landing_page.html">
+        <div class="logo-container">
+          <img
+            src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+            class="logo"
+            alt="Logo"
+          />
+          <h1>RAFISHDAR</h1>
+        </div>
+      </a>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <nav class="nav-menu">
+        <a href="../barra/zonas.html"><button>Zona</button></a>
+        <a href="../barra/mapas.html"><button>Mapas</button></a>
+        <a href="../barra/reportes.html"><button>Reportes</button></a>
+        <a href="../barra/notificaciones.html"
+          ><button>Notificaciones</button></a
+        >
+        <a href="../barra/quienes_somos.html"><button>Quienes somos</button></a>
+      </nav>
+
+      <a href="../Inicio_sesion/usuariopage.html">
+        <div class="profile-icon">
+          <img src="../Imagenes/Usuario.png" alt="Perfil" />
+        </div>
+      </a>
+    </header>
+    <a href="mensaje.html">
+      <div class="chat-button"><span>💬</span></div>
+    </a>
+
+    <!-- SECCIÓN MENSAJES -->
+    <section class="mensajes-wrapper" aria-labelledby="mensajes-title">
+      <h2 id="mensajes-title">Mensaje</h2>
+
+      <form id="formMensaje" class="mensajes-form" novalidate>
+        <!-- Asunto -->
+        <label for="asunto" class="mensajes-label">Asunto</label>
+        <input
+          type="text"
+          id="asunto"
+          name="asunto"
+          class="mensajes-input"
+          placeholder="Asunto"
+          required
+          minlength="3"
+          maxlength="120"
+        />
+
+        <!-- Contenido -->
+        <label for="contenido" class="mensajes-label">Contenido</label>
+        <textarea
+          id="contenido"
+          name="contenido"
+          class="mensajes-textarea"
+          placeholder="Escriba aquí"
+          required
+          rows="8"
+          minlength="5"
+          maxlength="2000"
+        ></textarea>
+
+        <!-- Botón enviar -->
+        <button type="submit" class="btn-enviar">Enviar mensaje</button>
+
+        <!-- Feedback de validación -->
+        <p
+          class="mensajes-feedback"
+          id="mensajesFeedback"
+          aria-live="polite"
+        ></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img
+            src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>Rafishdar</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legalidad</h4>
+          <a href="../Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <a href="../Documentos/Terminos-y-condiciones.pdf"
+            >Términos y Condiciones</a
+          >
+          <a href="../Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contacto</h4>
+          <p>Háblanos si tienes alguna duda</p>
+          <p>Atención 24h</p>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos en nuestra redes</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../menu_toggle.js"></script>
+  </body>
+</html>
