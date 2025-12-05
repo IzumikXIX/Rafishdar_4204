@@ -1,5 +1,5 @@
 /* Tarjeta similar al estilo de tus contenedores */
-.mensajes-wrapper {
+.mensajes {
   max-width: 900px;
   margin: 2rem auto;
   background-color: rgba(250, 243, 225, 0.92);

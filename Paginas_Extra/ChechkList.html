@@ -36,7 +36,6 @@
         >
         <a href="../barra/quienes_somos.html"><button>Quienes somos</button></a>
       </nav>
-
       <a href="../Inicio_sesion/usuariopage.html">
         <div class="profile-icon">
           <img src="../Imagenes/Usuario.png" alt="Perfil" />
@@ -47,11 +46,68 @@
       <div class="chat-button"><span>💬</span></div>
     </a>
 
+    <main class="cards-wrapper">
+      <div class="card checklist-card">
+        <h2>🎣 Checklist de Pesca</h2>
+        <p class="card-text">
+          Marca los elementos esenciales para no olvidar nada en tu salida.
+        </p>
+
+        <div class="card-list">
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Caña de pescar y carrete</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Caja de aparejos (anzuelos, plomos)</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Carnada o señuelos</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Licencia de pesca vigente</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Alicates y cortahilos</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Protector solar y sombrero</span>
+          </label>
+          <br />
+          <label class="checklist-item">
+            <input type="checkbox" />
+            <span class="custom-checkbox"></span>
+            <span class="item-text">Agua y snacks</span>
+          </label>
+        </div>
+
+        <button class="card-btn" onclick="window.print()">
+          Descargar Lista
+        </button>
+      </div>
+    </main>
+    <br />
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-brand">
           <img
-            src="./Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
+            src="../Imagenes/elimina_el_fondo_bla-removebg-preview 1.png"
             alt="Logo"
             class="footer-logo"
           />
